@@ -18,7 +18,7 @@ jobs:
     - name: checkout
       uses: actions/checkout@v2
       with:
-        token: ''
+        token: ${{ github.token }}
     - id: file_changes
       # changed filesをリスト化してくれるモジュール
       uses: trilom/file-changes-action@v1.2.4
